@@ -1,0 +1,14 @@
+{% load i18n %}
+<div class="left-side-navigation">
+    <ul class="uk-list">
+        {% with request.resolver_match.url_name as url_endpoint %}
+            <li {% if url_endpoint == 'profile' %}class="active"{% endif %}><a href="{% url 'profile' %}"><img src="/static/img/png/l1.png" alt="">{% trans 'Назначенные приёмы' %}</a></li>
+            <li {% if url_endpoint == 'treatments' %}class="active"{% endif %}><a href="{% url 'treatments' %}"><img src="/static/img/png/l2.png" alt="">{% trans 'Мое лечение' %}</a></li>
+            <li {% if url_endpoint == 'history' %}class="active"{% endif %}><a href="{% url 'history' %}"><img src="/static/img/png/l3.png" alt="">{% trans 'История посещений' %}</a></li>
+            <li {% if url_endpoint == 'laboratory' %}class="active"{% endif %}><a href="{% url 'laboratory' %}"><img src="/static/img/png/l4.png" alt="">{% trans 'Лабораторные анализы' %}</a></li>
+            <li {% if url_endpoint == 'booking_first_step' %}class="active"{% endif %}><a href="{% url 'booking_first_step' %}"><img src="/static/img/png/l5.png" alt="">{% trans 'Запись к врачу' %}</a></li>
+            <li><a href=""><img src="/static/img/png/l6.png" alt="">{% trans 'Мой профиль' %}</a></li>
+            <li><a href="{% url 'log_me_out' %}"><img src="/static/img/png/l7.png" alt="">{% trans 'Выйти' %}</a></li>
+        {% endwith %}
+    </ul>
+</div>

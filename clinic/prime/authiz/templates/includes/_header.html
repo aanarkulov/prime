@@ -1,0 +1,59 @@
+{% load i18n %}
+<header uk-sticky="animation: uk-animation-slide-top; top: 500;">
+    <div class="uk-container">
+        <nav class="uk-navbar" uk-navbar="">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+            <li class="uk-logo"><a href="{% url 'index' %}"><img src="/static/img/png/logo.png" alt=""></a></li>
+            <li class="uk-active uk-visible@m"><a href="{% url 'about' %}">{% trans 'О клинике' %}</a></li>
+            <li class="uk-visible@m"><a href="{% url 'services' %}">{% trans 'Услуги' %}</a></li>
+            <li class="uk-visible@m"><a href="{% url 'doctors' %}">{% trans 'Врачи' %}</a></li>
+            <li class="uk-visible@m"><a href="{% url 'treatment' %}">{% trans 'Лечение' %}</a></li>
+            <li class="uk-visible@m"><a href="{% url 'diagnostic' %}">{% trans 'Диагностика' %}</a></li>
+            <li class="uk-visible@m"><a href="{% url 'prices' %}">{% trans 'Цены' %}</a></li>
+            <li class="uk-visible@m"><a href="{% url 'contact' %}">{% trans 'Контакты' %}</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@m">
+            <li class="loop"><a class="uk-navbar-toggle" href="#"><img src="/static/img/png/loop.png" alt=""></a>
+                <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+                <div class="uk-grid-small uk-flex-middle" uk-grid="">
+                    <div class="uk-width-expand">
+                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                        <input class="uk-search-input" type="search" placeholder="{% trans 'Поиск...' %}" autofocus>
+                    </form>
+                    </div>
+                    <div class="uk-width-auto"><a class="uk-navbar-dropdown-close" href="#" uk-close=""></a></div>
+                </div>
+                </div>
+            </li>
+            <li class="call-back"><a class="uk-button uk-button-default uk-box-shadow-hover-large" href="#" uk-toggle="target: #make-an-appointment">{% trans 'Записаться на прием' %}</a></li>
+            </ul><a class="uk-navbar-toggle uk-hidden@m" href="#" uk-toggle="target: #offcanvas-nav"><span uk-navbar-toggle-icon=""></span></a>
+        </div>
+        </nav>
+    </div>
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true; mode: push;">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close=""></button>
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-active"><a href="{% url 'about' %}">{% trans 'О клинике' %}</a></li>
+                <li><a href="{% url 'services' %}">{% trans 'Услуги' %}</a></li>
+                <li><a href="{% url 'doctors' %}">{% trans 'Врачи' %}</a></li>
+                <li><a href="{% url 'treatment' %}">{% trans 'Лечение' %}</a></li>
+                <li><a href="{% url 'diagnostic' %}">{% trans 'Диагностика' %}</a></li>
+                <li><a href="{% url 'prices' %}">{% trans 'Цены' %}</a></li>
+                <li><a href="{% url 'contact' %}">{% trans 'Контакты' %}</a></li>
+                <li class="uk-nav-divider"></li>
+                <li>
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input class="uk-search-input" type="search" placeholder="Поиск...">
+                </form>
+                </li>
+                <li class="call-back"><a class="uk-button uk-button-default uk-box-shadow-hover-large" href="#" uk-toggle="target: #make-an-appointment">{% trans 'Записаться на прием' %}</a></li>
+                <li class="uk-nav-divider"></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="call-back-fixed"><a href="" uk-toggle="target: #make-an-appointment">{% trans 'ОБРАТНАЯ СВЯЗЬ' %}</a></div>

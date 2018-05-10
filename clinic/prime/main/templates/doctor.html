@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="page, keywords">
+    <meta name="theme-color" content="#000000">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+      @font-face{font-family:OpenSansRegular;src:url(../fonts/OpenSansRegular/OpenSansRegular.ttf);src:url(../fonts/OpenSansRegular/OpenSansRegular.eot);src:url(../fonts/OpenSansRegular/OpenSansRegular.woff)}body{font-family:OpenSansRegular}@media screen and (max-width:960px){body{padding-bottom:40px}}
+    </style>
+    <link rel="preload" href="css/libs.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/libs.min.css"></noscript>
+    <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+    <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <div class="uk-offcanvas-content">
+      <section class="top-line">
+        <div class="uk-container">
+          <div class="uk-flex uk-flex-between@m">
+            <div>
+              <div class="phone uk-flex-inline">
+                <div uk-switcher=""><a class="operator"><img src="img/png/megacom.png"></a><a class="operator"><img src="img/png/o!.png" alt=""></a><a class="operator"><img src="img/png/beeline.png" alt=""></a></div><b class="uk-switcher"><a href="tel:+996 (312) 888 999">+996 (312) 888 999</a><a href="tel:+996 (312) 888 999">+996 (312) 888 991</a><a href="tel:+996 (312) 888 999">+996 (312) 888 992</a></b>
+              </div>
+              <div class="social uk-flex-inline"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-instagram"></i></a><a href=""><i class="fa fa-youtube-play"></i></a></div>
+            </div>
+            <div>
+              <div class="uk-flex-inline faq"><a href="">FAQ</a></div>
+              <div class="uk-flex-inline language">
+                <button class="uk-button uk-button-default" type="button">Русский<span class="uk-margin-small-left" uk-icon="icon: chevron-down"></span></button>
+                <div uk-drop="pos: bottom-justify; offset: 7; delay-hide: 50">
+                  <div class="uk-card uk-card-body uk-card-default">
+                    <div><a href="">English</a></div>
+                    <div><a href="">Кыргызча</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-flex-inline user-block"><a class="user uk-flex-inline uk-flex-middle" href=""><img class="uk-margin-small-right" src="img/png/user.png" alt=""><span>Личный кабинет</span></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <header uk-sticky="animation: uk-animation-slide-top; top: 500;">
+        <div class="uk-container">
+          <nav class="uk-navbar" uk-navbar="">
+            <div class="uk-navbar-left">
+              <ul class="uk-navbar-nav">
+                <li class="uk-logo"><a href="#"><img src="img/png/logo.png" alt=""></a></li>
+                <li class="uk-active uk-visible@m"><a href="#">О клинике</a></li>
+                <li class="uk-visible@m"><a href="#">Услуги</a></li>
+                <li class="uk-visible@m"><a href="#">Врачи</a></li>
+                <li class="uk-visible@m"><a href="#">Лечение</a></li>
+                <li class="uk-visible@m"><a href="#">Диагностика</a></li>
+                <li class="uk-visible@m"><a href="#">Цены</a></li>
+                <li class="uk-visible@m"><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav uk-visible@m">
+                <li class="loop"><a class="uk-navbar-toggle" href="#"><img src="img/png/loop.png" alt=""></a>
+                  <div class="uk-navbar-dropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid="">
+                      <div class="uk-width-expand">
+                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                          <input class="uk-search-input" type="search" placeholder="Поиск..." autofocus>
+                        </form>
+                      </div>
+                      <div class="uk-width-auto"><a class="uk-navbar-dropdown-close" href="#" uk-close=""></a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="call-back"><a class="uk-button uk-button-default uk-box-shadow-hover-large" href="#" uk-toggle="target: #make-an-appointment">Записаться на прием</a></li>
+              </ul><a class="uk-navbar-toggle uk-hidden@m" href="#" uk-toggle="target: #offcanvas-nav"><span uk-navbar-toggle-icon=""></span></a>
+            </div>
+          </nav>
+        </div>
+        <div id="offcanvas-nav" uk-offcanvas="overlay: true; mode: push;">
+          <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close=""></button>
+            <ul class="uk-nav uk-nav-default">
+              <li class="uk-active"><a href="#">О клинике</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Врачи</a></li>
+              <li><a href="#">Лечение</a></li>
+              <li><a href="#">Диагностика</a></li>
+              <li><a href="#">Цены</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li class="uk-nav-divider"></li>
+              <li>
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                  <input class="uk-search-input" type="search" placeholder="Поиск...">
+                </form>
+              </li>
+              <li class="call-back"><a class="uk-button uk-button-default uk-box-shadow-hover-large" href="#" uk-toggle="target: #make-an-appointment">Записаться на прием</a></li>
+              <li class="uk-nav-divider"></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="call-back-fixed"><a href="" uk-toggle="target: #make-an-appointment">ОБРАТНАЯ СВЯЗЬ</a></div>
+      <section class="pagination-banner" style="background-image: url(img/jpg/bgbr.jpg);" uk-parallax="bgy: -200">
+        <div class="uk-container">
+          <div class="uk-text-center">
+            <ul class="uk-breadcrumb uk-flex-center">
+              <li><a href="#">ItemItem Очень длинное название</a></li>
+              <li><a href="#">Item Очень длинное название</a></li>
+              <li class="uk-disabled"><a>Disabled</a></li>
+              <li><span>Active</span></li>
+            </ul>
+            <h1>л.а. бокерия</h1>
+          </div>
+        </div>
+      </section>
+      <section class="doctor">
+        <div class="uk-container">
+          <div class="doctor-item">
+            <div class="item">
+              <div class="uk-position-relative uk-box-shadow-small uk-box-shadow-hover-large uk-width-1-2@s uk-width-1-3@m uk-width-1-3@l uk-margin-auto">
+                <div class="uk-cover-container"><img class="lazy" data-src="img/jpg/doctor.jpg" alt="" uk-cover="">
+                  <canvas width="600" height="500"></canvas>
+                </div>
+                <div class="icon uk-flex-inline uk-flex-middle uk-flex-center">
+                  <div><img src="img/png/doctor.png" alt=""></div>
+                </div>
+              </div>
+              <div class="about uk-width-1-2@s uk-width-1-2@m uk-width-1-2@l uk-margin-auto">
+                <h5>главный врач</h5>
+                <h4>л.а. бокерия</h4>
+                <p>Л. А. Бокерия на протяжении всей своей деятельности активно и плодотворно использовал экспериментальный метод. Целый ряд операций и методов, апробированных в эксперименте, затем были успешно реализованы в клинике.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-block-doctor">
+            <ul class="uk-subnav uk-subnav-pill uk-grid-collapse uk-margin-remove-left uk-child-width-1-2@m" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium" uk-grid="">
+              <li><a href="#">биография</a></li>
+              <li><a href="#">навыки</a></li>
+            </ul>
+            <ul class="uk-switcher uk-margin">
+              <li>
+                <div class="uk-padding-small">
+                  <h5>Биография:</h5>
+                  <p>Под их воздействием происходит рассасывание воспалительных очагов, резорбция отеков, коррекция патологических аутоиммунных сдвигов, улучшается кровоснабжение, микроциркуляция и трофика тканей, нормализуется регуляция сосудистого тонуса, снижаются мышечный спазм, артериальное давление (АД), спастичность и регидность мышц, исчезает или уменьшается боль. Повышение уровня адаптационных и компенсаторных механизмов в результате использования физических факторов способствует обратному развитию заболеваний, задерживает прогрессирование патологического процесса, препятствует развитию осложнений, создает условия для восстановления утраченных функций .</p>
+                  <h5>Опыт:</h5>
+                  <div class="uk-grid-small uk-width-1-2@l" uk-grid="">
+                    <div class="uk-width-expand@m" uk-leader=""><b>1994 - 2000</b></div>
+                    <div>
+                      <p>Главный врач городской больницы 145</p>
+                    </div>
+                  </div>
+                  <div class="uk-grid-small uk-width-1-2@l" uk-grid="">
+                    <div class="uk-width-expand@m" uk-leader=""><b>1994 - 2000</b></div>
+                    <div>
+                      <p>Главный врач городской больницы 145</p>
+                    </div>
+                  </div>
+                  <div class="uk-grid-small uk-width-1-2@l" uk-grid="">
+                    <div class="uk-width-expand@m" uk-leader=""><b>1994 - 2000</b></div>
+                    <div>
+                      <p>Главный врач городской больницы 145</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-padding-small">
+                  <h5>Навыки:</h5>
+                  <div class="uk-grid-small uk-width-1-2@l" uk-grid="">
+                    <div class="uk-width-expand@m" uk-leader=""><b>1994 - 2000</b></div>
+                    <div>
+                      <p>Главный врач городской больницы 145</p>
+                    </div>
+                  </div>
+                  <div class="uk-grid-small uk-width-1-2@l" uk-grid="">
+                    <div class="uk-width-expand@m" uk-leader=""><b>1994 - 2000</b></div>
+                    <div>
+                      <p>Главный врач городской больницы 145</p>
+                    </div>
+                  </div>
+                  <div class="uk-grid-small uk-width-1-2@l" uk-grid="">
+                    <div class="uk-width-expand@m" uk-leader=""><b>1994 - 2000</b></div>
+                    <div>
+                      <p>Главный врач городской больницы 145</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="call-back-block" uk-parallax="bgy: -500">
+        <div class="uk-container uk-container-small">
+          <div class="uk-grid uk-flex-middle" uk-grid="">
+            <div class="uk-width-expand@m uk-text-center">
+              <h5 class="uk-flex-inline uk-margin-remove">Звоните нам напрямую  +996 (700) 490 990</h5><a class="uk-button uk-button-default uk-margin-medium-left" href="">Записаться на прием</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="uk-container">
+          <div class="uk-grid uk-grid-small uk-child-width-expand@l uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center uk-text-left@s" uk-grid="">
+            <div>
+              <div class="item">
+                <ul>
+                  <li><b><a>Врачи</a></b></li>
+                  <li><b><a>Лечение</a></b></li>
+                  <li><b><a>Цены</a></b></li>
+                  <li><b><a>Контакты</a></b></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <h5>Услуги</h5>
+                <ul>
+                  <li> <a>Гинекология</a></li>
+                  <li> <a>Офтальмология</a></li>
+                  <li> <a>Неврология</a></li>
+                  <li> <a>Прием терапевта</a></li>
+                  <li> <a>Кардиология</a></li>
+                  <li> <a>Эндокринология</a></li>
+                  <li> <a>Урология</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <h5>О клинике</h5>
+                <ul>
+                  <li><a>Миссия</a></li>
+                  <li><a>История</a></li>
+                  <li><a>Отчеты</a></li>
+                  <li><a>Корпоративная <br> социальная <br> ответственность</a></li>
+                  <li><a>Документы</a></li>
+                  <li><a>Вакансии</a></li>
+                  <li><a>Наши преимущества</a></li>
+                  <li><a>Лицензии</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <h5>Диагностика</h5>
+                <ul>
+                  <li><a>МРТ</a></li>
+                  <li><a>Ренген</a></li>
+                  <li><a>Кардиограна</a></li>
+                  <li><a>УМКР</a></li>
+                  <li><a>КТ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="item">
+                <h6>Круглосуточная служба поддержки:</h6><a class="phone" href="tel: 996 (700) 320 333">996 (700) 320 333</a>
+                <h6>Присоединяйтесь к нам:</h6>
+                <div class="social uk-padding-small"><a class="uk-icon-button uk-margin-small-right" href=""><i class="fa fa-facebook"></i></a><a class="uk-icon-button uk-margin-small-right" href=""><i class="fa fa-instagram"></i></a><a class="uk-icon-button uk-margin-small-right" href=""><i class="fa fa-youtube-play"></i></a></div>
+                <h6>Работаем по всему Кыргызстану</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <section class="copyright">
+        <div class="uk-container">
+          <p>© 1996-2018 Prime Clinic</p>
+        </div>
+      </section>
+      <!-- This is the modal-->
+      <div id="make-an-appointment" uk-modal="">
+        <div class="uk-modal-dialog uk-modal-body">
+          <button class="uk-modal-close-outside" type="button" uk-close=""></button>
+          <div class="bg-human">
+            <h3 class="uk-modal-title">ПОМОЖЕМ ЗАПИСАТЬСЯ НА ПРИЕМ <br> К НУЖНОМУ СПЕЦИАЛИСТУ В ТЕЧЕНИЕ 27 СЕКУНД</h3>
+            <form class="uk-width-1-2@m" action="">
+              <div>
+                <label class="uk-display-block">Ваш телефон<span class="uk-margin-small-left">*</span></label>
+                <div class="uk-margin">
+                  <input class="uk-input phone_us" type="text" placeholder="(996) ___-__-__-__">
+                </div>
+                <button class="uk-button uk-button-default">Записаться</button>
+                <div class="uk-margin mt">
+                  <label class="check">
+                    <input class="uk-checkbox" type="checkbox" checked><span>Я согласен на обработку персональных данных</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.min.js"></script>
+  </body>
+</html>

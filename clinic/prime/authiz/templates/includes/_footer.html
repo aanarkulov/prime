@@ -1,0 +1,107 @@
+{% load tz i18n %}
+
+<section class="call-back-block" uk-parallax="bgy: -500">
+    <div class="uk-container uk-container-small">
+        <div class="uk-grid uk-flex-middle" uk-grid="">
+        <div class="uk-width-expand@m uk-text-center">
+            <h5 class="uk-flex-inline uk-margin-remove">{% trans 'Звоните нам напрямую' %}  +996 (700) 490 990</h5><a class="uk-button uk-button-default uk-margin-medium-left" href="">{% trans 'Записаться на прием' %}</a>
+        </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="uk-container">
+        <div class="uk-grid uk-grid-small uk-child-width-expand@l uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center uk-text-left@s" uk-grid="">
+        <div>
+            <div class="item">
+            <ul>
+                <li><b><a href="{% url 'doctors' %}">{% trans 'Врачи' %}</a></b></li>
+                <li><b><a href="{% url 'treatment' %}">{% trans 'Лечение' %}</a></b></li>
+                <li><b><a href="{% url 'prices' %}">{% trans 'Цены' %}</a></b></li>
+                <li><b><a href="{% url 'contact' %}">{% trans 'Контакты' %}</a></b></li>
+            </ul>
+            </div>
+        </div>
+        <div>
+            <div class="item">
+            <h5>{% trans 'Услуги' %}</h5>
+            <ul>
+                <li> <a>Гинекология</a></li>
+                <li> <a>Офтальмология</a></li>
+                <li> <a>Неврология</a></li>
+                <li> <a>Прием терапевта</a></li>
+                <li> <a>Кардиология</a></li>
+                <li> <a>Эндокринология</a></li>
+                <li> <a>Урология</a></li>
+            </ul>
+            </div>
+        </div>
+        <div>
+            <div class="item">
+            <h5>{% trans 'О клинике' %}</h5>
+            <ul>
+                <li><a>Миссия</a></li>
+                <li><a>История</a></li>
+                <li><a>Отчеты</a></li>
+                <li><a>Корпоративная <br> социальная <br> ответственность</a></li>
+                <li><a>Документы</a></li>
+                <li><a>Вакансии</a></li>
+                <li><a>Наши преимущества</a></li>
+                <li><a>Лицензии</a></li>
+            </ul>
+            </div>
+        </div>
+        <div>
+            <div class="item">
+            <h5>{% trans 'Диагностика' %}</h5>
+            <ul>
+                <li><a>МРТ</a></li>
+                <li><a>Ренген</a></li>
+                <li><a>Кардиограна</a></li>
+                <li><a>УМКР</a></li>
+                <li><a>КТ</a></li>
+            </ul>
+            </div>
+        </div>
+        <div>
+            <div class="item">
+            <h6>{% trans 'Круглосуточная служба поддержки' %}:</h6><a class="phone" href="tel: 996 (700) 320 333">996 (700) 320 333</a>
+            <h6>{% trans 'Присоединяйтесь к нам' %}:</h6>
+            <div class="social uk-padding-small"><a class="uk-icon-button uk-margin-small-right" href=""><i class="fa fa-facebook"></i></a><a class="uk-icon-button uk-margin-small-right" href=""><i class="fa fa-instagram"></i></a><a class="uk-icon-button uk-margin-small-right" href=""><i class="fa fa-youtube-play"></i></a></div>
+            <h6>{% trans 'Работаем по всему Кыргызстану' %}</h6>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+<section class="copyright">
+    {% timezone "Asia/Bishkek" %}
+        <div class="uk-container">
+            <p>© 1996-{% now 'Y' %} Prime Clinic</p>
+        </div>
+    {% endtimezone %}
+</section>
+<!-- This is the modal-->
+<div id="make-an-appointment" uk-modal="">
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-outside" type="button" uk-close=""></button>
+        <div class="bg-human">
+        <h3 class="uk-modal-title">{% trans 'ПОМОЖЕМ ЗАПИСАТЬСЯ НА ПРИЕМ' %} <br> {% trans 'К НУЖНОМУ СПЕЦИАЛИСТУ В ТЕЧЕНИЕ 27 СЕКУНД' %}</h3>
+        <form class="uk-width-1-2@m" action="">
+            <div>
+            <label class="uk-display-block">{% trans 'Ваш телефон' %}<span class="uk-margin-small-left">*</span></label>
+            <div class="uk-margin">
+                <input class="uk-input phone_us" type="text" placeholder="(996) ___-__-__-__">
+            </div>
+            <button class="uk-button uk-button-default">{% trans 'Записаться' %}</button>
+            <div class="uk-margin mt">
+                <label class="check">
+                <input class="uk-checkbox" type="checkbox" checked><span>{% trans 'Я согласен на обработку персональных данных' %}</span>
+                </label>
+            </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>

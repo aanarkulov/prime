@@ -1,0 +1,92 @@
+{% extends '_base.html' %}
+{% load static i18n filter %}
+
+{% block page_content %}
+  {% include "includes/_top_with_title.html" %}
+  <section class="contacts">
+    <div class="uk-container">
+      <div class="uk-grid" uk-grid="">
+        <div class="uk-width-1-4@l uk-width-1-3@m">
+          <div class="info">
+            <div class="border-b">
+              <h5>{% trans 'адрес' %}</h5>
+              <p>{{contact.address}}</p>
+            </div>
+            <div class="border-b">
+              <h5>{% trans 'телефоны' %}</h5>
+              {% for telephone in contact.telephones|as_list %}
+                <div><a href="tel: {{telephone}}">{{telephone}}</a></div>
+              {% endfor %}
+            </div>
+            <div class="border-b">
+              <h5>E-mail</h5><a href="mailto: {{contact.email}}">{{contact.email}}</a>
+            </div>
+            <div>
+              <h5>{% trans 'социальные сети' %}</h5>
+              {% if socials.count %}
+                {% for link in socials %}
+                  <a class="uk-icon-button uk-margin-small-right" href="{{link.link}}" target="blank"><i class="fa fa-{{link.symbol}}"></i></a>
+                {% endfor %}
+              {% else %}
+                <a class="uk-icon-button uk-margin-small-right" href=""><i class="fa fa-facebook"></i></a>
+                <a class="uk-icon-button uk-margin-small-right" href=""><i class="fa fa-instagram"></i></a>
+                <a class="uk-icon-button uk-margin-small-right" href=""><i class="fa fa-youtube-play"></i></a>
+              {% endif %}
+            </div>
+          </div>
+          <div class="operating-mode">
+            <h4>{% trans 'Режим работы' %}</h4>
+            <div class="day">
+              <p>{% trans 'Понедельник' %} - {% trans 'Суббота' %}</p><b>9:00 - 18:00</b>
+            </div>
+            <div class="day">
+              <p>{% trans 'Обед с' %} </p><b>12:00 - 13:00</b>
+            </div>
+            <div class="day">
+              <p>{% trans 'Воскресенье' %}</p><b>{% trans 'Выходной' %}</b>
+            </div>
+          </div>
+        </div>
+        <div class="uk-width-expand@m">
+          <div class="item">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11696.412114417744!2d74.57638615!3d42.8706695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1520843362008" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+            <div class="uk-margin">
+              <h4>{% trans 'У вас остались вопросы или пожелание?' %}</h4>
+              <p>{% trans 'Вы можете задать любые вопросы по телефону или связаться с нами через нашу контактную форму ниже.' %}</p>
+            </div>
+            <form>
+              <div class="uk-child-width-1-2@m uk-grid" uk-grid="">
+                <div>
+                  <label>{% trans 'Имя' %} <span>*</span></label>
+                  <input class="uk-input" type="text">
+                </div>
+                <div>
+                  <label>{% trans 'Тема' %} </label>
+                  <input class="uk-input" type="text">
+                </div>
+                <div>
+                  <label>{% trans 'Телефон' %}  <span>*</span></label>
+                  <input class="uk-input phone_us" type="text" placeholder="(996) ___-__-__-__">
+                </div>
+                <div>
+                  <label>E-mail  <span>*</span></label>
+                  <input class="uk-input" type="text">
+                </div>
+                <div class="uk-width-1-1@m">
+                  <label>{% trans 'Сообщение' %}<span>*</span></label>
+                  <textarea class="uk-textarea" type="text" rows="5"></textarea>
+                </div>
+                <div class="uk-text-center">
+                  <p>тут будет капча</p>
+                </div>
+                <div class="uk-text-right">
+                  <button class="uk-button uk-button-default" type="submit">{% trans 'Отправить' %}</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

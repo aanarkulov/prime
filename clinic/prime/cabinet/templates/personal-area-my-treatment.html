@@ -1,0 +1,139 @@
+{% extends '_base.html' %}
+{% load static i18n %}
+{% block page_content %}
+  <section class="personal-area">
+    <div class="uk-container">
+      <div class="uk-grid uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m">
+          {% include "includes/_menu.html" %}
+        </div>
+        <div class="uk-width-expand@m">
+          <div class="my-treatment">
+            <ul uk-accordion="">
+              <li class="uk-open"><a class="uk-accordion-title" href="#">{% trans 'Лечение спинной части' %}</a>
+                <div class="uk-accordion-content">
+                  <div class="uk-overflow-auto">
+                    <table class="uk-table uk-table-small uk-table-striped">
+                      <thead>
+                        <tr>
+                          <th>{% trans 'Услуга' %}</th>
+                          <th>{% trans 'Specialists' %}</th>
+                          <th>{% trans 'Дата' %}</th>
+                          <th> </th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Электростимуляция</td>
+                          <td>Электростимуляция</td>
+                          <td>11.04.18</td>
+                          <td><a class="blue" href="">Перенести</a></td>
+                          <td class="uk-text-center"><a class="red" href="" type="button" uk-close=""></a></td>
+                        </tr>
+                        <tr>
+                          <td>Электростимуляция</td>
+                          <td>Электростимуляция</td>
+                          <td>11.04.18</td>
+                          <td><a class="blue" href="">Записаться</a></td>
+                          <td class="uk-text-center"><a class="red" href="" type="button" uk-close=""></a></td>
+                        </tr>
+                        <tr>
+                          <td>Электростимуляция</td>
+                          <td>Электростимуляция</td>
+                          <td>11.04.18</td>
+                          <td><a class="blue" href="">Перенести</a></td>
+                          <td class="uk-text-center"><a class="red" href="" type="button" uk-close=""></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+              <li><a class="uk-accordion-title" href="#">{% trans 'Лечение спинной части' %}</a>
+                <div class="uk-accordion-content">
+                  <div class="uk-overflow-auto">
+                    <table class="uk-table uk-table-small uk-table-striped">
+                      <thead>
+                        <tr>
+                          <th>{% trans 'Услуга' %}</th>
+                          <th>{% trans 'Specialists' %}</th>
+                          <th>{% trans 'Дата' %}</th>
+                          <th> </th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Электростимуляция</td>
+                          <td>Электростимуляция</td>
+                          <td>11.04.18</td>
+                          <td><a class="blue" href="">Перенести</a></td>
+                          <td class="uk-text-center"><a class="red" href="" type="button" uk-close=""></a></td>
+                        </tr>
+                        <tr>
+                          <td>Электростимуляция</td>
+                          <td>Электростимуляция</td>
+                          <td>11.04.18</td>
+                          <td><a class="blue" href="">Перенести</a></td>
+                          <td class="uk-text-center"><a class="red" href="" type="button" uk-close=""></a></td>
+                        </tr>
+                        <tr>
+                          <td>Электростимуляция</td>
+                          <td>Электростимуляция</td>
+                          <td>11.04.18</td>
+                          <td><a class="blue" href="">Перенести</a></td>
+                          <td class="uk-text-center"><a class="red" href="" type="button" uk-close=""></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+              <li><a class="uk-accordion-title" href="#">{% trans 'Лечение спинной части' %}</a>
+                <div class="uk-accordion-content">
+                  <div class="uk-overflow-auto">
+                    <table class="uk-table uk-table-small uk-table-striped">
+                      <thead>
+                        <tr>
+                          <th>{% trans 'Услуга' %}</th>
+                          <th>{% trans 'Specialists' %}</th>
+                          <th>{% trans 'Дата' %}</th>
+                          <th> </th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Электростимуляция</td>
+                          <td>Электростимуляция</td>
+                          <td>11.04.18</td>
+                          <td><a class="blue" href="">Перенести</a></td>
+                          <td class="uk-text-center"><a class="red" href="" type="button" uk-close=""></a></td>
+                        </tr>
+                        <tr>
+                          <td>Электростимуляция</td>
+                          <td>Электростимуляция</td>
+                          <td>11.04.18</td>
+                          <td><a class="blue" href="">Перенести</a></td>
+                          <td class="uk-text-center"><a class="red" href="" type="button" uk-close=""></a></td>
+                        </tr>
+                        <tr>
+                          <td>Электростимуляция</td>
+                          <td>Электростимуляция</td>
+                          <td>11.04.18</td>
+                          <td><a class="blue" href="">Перенести</a></td>
+                          <td class="uk-text-center"><a class="red" href="" type="button" uk-close=""></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

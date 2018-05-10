@@ -1,0 +1,671 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-04 13:28+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: authiz/templates/code_activation.html:14
+#, fuzzy
+#| msgid "Введите фамилия и имя врача"
+msgid "Введите код активации"
+msgstr "Enter code activation"
+
+#: authiz/templates/code_activation.html:20
+msgid "Подтвердить"
+msgstr "Confirm"
+
+#: authiz/templates/includes/_footer.html:7
+#: cabinet/templates/includes/_footer.html:7
+#: main/templates/includes/_footer.html:7
+msgid "Звоните нам напрямую"
+msgstr "Call us directly"
+
+#: authiz/templates/includes/_footer.html:7
+#: authiz/templates/includes/_header.html:31
+#: authiz/templates/includes/_header.html:53
+#: cabinet/templates/includes/_footer.html:7
+#: cabinet/templates/includes/_header.html:31
+#: cabinet/templates/includes/_header.html:53
+#: main/templates/includes/_footer.html:7
+#: main/templates/includes/_header.html:31
+#: main/templates/includes/_header.html:53 main/templates/index.html:228
+msgid "Записаться на прием"
+msgstr "Make a book"
+
+#: authiz/templates/includes/_footer.html:19
+#: authiz/templates/includes/_header.html:10
+#: authiz/templates/includes/_header.html:42
+#: cabinet/templates/includes/_footer.html:19
+#: cabinet/templates/includes/_header.html:10
+#: cabinet/templates/includes/_header.html:42
+#: main/templates/includes/_footer.html:19
+#: main/templates/includes/_header.html:10
+#: main/templates/includes/_header.html:42
+#: main/templates/includes/_top_with_title.html:7 main/views.py:71
+msgid "Врачи"
+msgstr "Doctors"
+
+#: authiz/templates/includes/_footer.html:20
+#: authiz/templates/includes/_header.html:11
+#: authiz/templates/includes/_header.html:43
+#: cabinet/templates/includes/_footer.html:20
+#: cabinet/templates/includes/_header.html:11
+#: cabinet/templates/includes/_header.html:43
+#: main/templates/includes/_footer.html:20
+#: main/templates/includes/_header.html:11
+#: main/templates/includes/_header.html:43 main/templates/prices.html:13
+#: main/views.py:53
+msgid "Лечение"
+msgstr "Treatment"
+
+#: authiz/templates/includes/_footer.html:21
+#: authiz/templates/includes/_header.html:13
+#: authiz/templates/includes/_header.html:45
+#: cabinet/templates/includes/_footer.html:21
+#: cabinet/templates/includes/_header.html:13
+#: cabinet/templates/includes/_header.html:45
+#: main/templates/includes/_footer.html:21
+#: main/templates/includes/_header.html:13
+#: main/templates/includes/_header.html:45
+#: main/templates/includes/_top_with_title.html:9 main/views.py:85
+msgid "Цены"
+msgstr "Prices"
+
+#: authiz/templates/includes/_footer.html:22
+#: authiz/templates/includes/_header.html:14
+#: authiz/templates/includes/_header.html:46
+#: cabinet/templates/includes/_footer.html:22
+#: cabinet/templates/includes/_header.html:14
+#: cabinet/templates/includes/_header.html:46
+#: main/templates/includes/_footer.html:22
+#: main/templates/includes/_header.html:14
+#: main/templates/includes/_header.html:46 main/views.py:37
+msgid "Контакты"
+msgstr "Contact"
+
+#: authiz/templates/includes/_footer.html:28
+#: authiz/templates/includes/_header.html:9
+#: authiz/templates/includes/_header.html:41
+#: cabinet/templates/includes/_footer.html:28
+#: cabinet/templates/includes/_header.html:9
+#: cabinet/templates/includes/_header.html:41
+#: main/templates/includes/_footer.html:28
+#: main/templates/includes/_header.html:9
+#: main/templates/includes/_header.html:41 main/views.py:78
+msgid "Услуги"
+msgstr "Services"
+
+#: authiz/templates/includes/_footer.html:42
+#: authiz/templates/includes/_header.html:8
+#: authiz/templates/includes/_header.html:40
+#: cabinet/templates/includes/_footer.html:42
+#: cabinet/templates/includes/_header.html:8
+#: cabinet/templates/includes/_header.html:40 main/models.py:15
+#: main/templates/includes/_footer.html:42
+#: main/templates/includes/_header.html:8
+#: main/templates/includes/_header.html:40 main/views.py:28
+msgid "О клинике"
+msgstr "About clinic"
+
+#: authiz/templates/includes/_footer.html:57
+#: authiz/templates/includes/_header.html:12
+#: authiz/templates/includes/_header.html:44
+#: cabinet/templates/includes/_footer.html:57
+#: cabinet/templates/includes/_header.html:12
+#: cabinet/templates/includes/_header.html:44
+#: main/templates/includes/_footer.html:57
+#: main/templates/includes/_header.html:12
+#: main/templates/includes/_header.html:44 main/templates/prices.html:15
+#: main/views.py:46
+msgid "Диагностика"
+msgstr "Diagnostic"
+
+#: authiz/templates/includes/_footer.html:69
+#: cabinet/templates/includes/_footer.html:69
+#: main/templates/includes/_footer.html:69
+msgid "Круглосуточная служба поддержки"
+msgstr "24-hours of technical support"
+
+#: authiz/templates/includes/_footer.html:70
+#: cabinet/templates/includes/_footer.html:70
+#: main/templates/includes/_footer.html:70
+msgid "Присоединяйтесь к нам"
+msgstr "Join us on"
+
+#: authiz/templates/includes/_footer.html:72
+#: cabinet/templates/includes/_footer.html:72
+#: main/templates/includes/_footer.html:72
+msgid "Работаем по всему Кыргызстану"
+msgstr "We work in all regions of Kyrgyzstan"
+
+#: authiz/templates/includes/_footer.html:90
+#: cabinet/templates/includes/_footer.html:90
+#: main/templates/includes/_footer.html:90
+msgid "ПОМОЖЕМ ЗАПИСАТЬСЯ НА ПРИЕМ"
+msgstr "We can help you making your book"
+
+#: authiz/templates/includes/_footer.html:90
+#: cabinet/templates/includes/_footer.html:90
+#: main/templates/includes/_footer.html:90
+msgid "К НУЖНОМУ СПЕЦИАЛИСТУ В ТЕЧЕНИЕ 27 СЕКУНД"
+msgstr "with the best specialist in 27 seconds"
+
+#: authiz/templates/includes/_footer.html:93
+#: cabinet/templates/includes/_footer.html:93
+#: main/templates/includes/_footer.html:93
+msgid "Ваш телефон"
+msgstr "Your telephone number"
+
+#: authiz/templates/includes/_footer.html:97
+#: cabinet/templates/includes/_footer.html:97
+#: main/templates/includes/_footer.html:97
+msgid "Записаться"
+msgstr "Book"
+
+#: authiz/templates/includes/_footer.html:100
+#: cabinet/templates/includes/_footer.html:100
+#: main/templates/includes/_footer.html:100
+msgid "Я согласен на обработку персональных данных"
+msgstr "I agree to the processing of my personal data"
+
+#: authiz/templates/includes/_header.html:24
+#: cabinet/templates/includes/_header.html:24
+#: main/templates/includes/_header.html:24
+msgid "Поиск..."
+msgstr "Search..."
+
+#: authiz/templates/includes/_header.html:59
+#: cabinet/templates/includes/_header.html:59
+#: main/templates/includes/_header.html:59
+msgid "ОБРАТНАЯ СВЯЗЬ"
+msgstr "Feed back"
+
+#: authiz/templates/includes/_tiny_header.html:13
+#: cabinet/templates/includes/_tiny_header.html:14
+#: main/templates/includes/_tiny_header.html:14 main/views.py:21
+msgid "Вопросы-Ответы"
+msgstr "FAQ"
+
+#: authiz/templates/includes/_tiny_header.html:38
+#: cabinet/templates/includes/_tiny_header.html:39
+#: main/templates/includes/_tiny_header.html:39
+msgid "Личный кабинет"
+msgstr "Personal cabinet"
+
+#: authiz/templates/includes/_tiny_header.html:40
+#: cabinet/templates/includes/_tiny_header.html:41
+#: main/templates/includes/_tiny_header.html:41
+msgid "Войти"
+msgstr "Login"
+
+#: authiz/views.py:38
+msgid "Wrong code or token is expired"
+msgstr "Неверный код или токен истек"
+
+#: cabinet/templates/includes/_menu.html:5
+msgid "Назначенные приёмы"
+msgstr "Assigned receptions"
+
+#: cabinet/templates/includes/_menu.html:6 cabinet/views.py:21
+msgid "Мое лечение"
+msgstr "My treatments"
+
+#: cabinet/templates/includes/_menu.html:7
+msgid "История посещений"
+msgstr "Visiting history"
+
+#: cabinet/templates/includes/_menu.html:8 cabinet/views.py:37
+msgid "Лабораторные анализы"
+msgstr "Lab analysis"
+
+#: cabinet/templates/includes/_menu.html:9
+#: cabinet/templates/personal-area-check-in-step1.html:12 cabinet/views.py:45
+msgid "Запись к врачу"
+msgstr "Book a doctor"
+
+#: cabinet/templates/includes/_menu.html:10 cabinet/views.py:13
+msgid "Мой профиль"
+msgstr "My profile"
+
+#: cabinet/templates/includes/_menu.html:11
+msgid "Выйти"
+msgstr "Logout"
+
+#: cabinet/templates/laboratory.html:17
+#: cabinet/templates/personal-area-visit-history.html:17
+#, fuzzy
+#| msgid "наши цены"
+msgid "Дата и время"
+msgstr "Date and Time"
+
+#: cabinet/templates/laboratory.html:18
+#: cabinet/templates/personal-area-visit-history.html:18
+#, fuzzy
+#| msgid "Врачи"
+msgid "Врач"
+msgstr "Doctor"
+
+#: cabinet/templates/laboratory.html:19
+#: cabinet/templates/personal-area-visit-history.html:19
+msgid "Процедуры"
+msgstr "Procedures"
+
+#: cabinet/templates/laboratory.html:20
+#: cabinet/templates/personal-area-visit-history.html:20
+#, fuzzy
+#| msgid "Стоимость (сом.)"
+msgid "Стоимость"
+msgstr "Cost (som.)"
+
+#: cabinet/templates/laboratory.html:20
+#: cabinet/templates/personal-area-visit-history.html:20
+msgid "в сомах"
+msgstr "in som"
+
+#: cabinet/templates/laboratory.html:21
+#: cabinet/templates/personal-area-visit-history.html:21
+msgid "Скидки или"
+msgstr "discount or"
+
+#: cabinet/templates/laboratory.html:21
+#: cabinet/templates/personal-area-visit-history.html:21
+msgid "бонус"
+msgstr "bounces"
+
+#: cabinet/templates/laboratory.html:22
+#: cabinet/templates/personal-area-visit-history.html:22
+msgid "Итого"
+msgstr "Total"
+
+#: cabinet/templates/laboratory.html:23
+#: cabinet/templates/personal-area-visit-history.html:23
+msgid "Статус"
+msgstr "Status"
+
+#: cabinet/templates/personal-area-check-in-step1.html:13
+msgid "Введите фамилия и имя врача"
+msgstr "Enter surname and name of the doctor"
+
+#: cabinet/templates/personal-area-check-in-step1.html:22
+msgid "Запись по отраслям медецины"
+msgstr "Booking by branches of medicine"
+
+#: cabinet/templates/personal-area-my-treatment.html:13
+#: cabinet/templates/personal-area-my-treatment.html:53
+#: cabinet/templates/personal-area-my-treatment.html:93
+#, fuzzy
+#| msgid "Лечение детей"
+msgid "Лечение спинной части"
+msgstr "treatment and rehabilitation"
+
+#: cabinet/templates/personal-area-my-treatment.html:19
+#: cabinet/templates/personal-area-my-treatment.html:59
+#: cabinet/templates/personal-area-my-treatment.html:99
+#: main/templates/prices.html:39
+msgid "Услуга"
+msgstr "Service"
+
+#: cabinet/templates/personal-area-my-treatment.html:20
+#: cabinet/templates/personal-area-my-treatment.html:60
+#: cabinet/templates/personal-area-my-treatment.html:100
+msgid "Specialists"
+msgstr ""
+
+#: cabinet/templates/personal-area-my-treatment.html:21
+#: cabinet/templates/personal-area-my-treatment.html:61
+#: cabinet/templates/personal-area-my-treatment.html:101
+msgid "Дата"
+msgstr "Date"
+
+#: cabinet/templates/personal-area.html:20
+msgid "День приема"
+msgstr "Day of reception"
+
+#: cabinet/templates/personal-area.html:21
+msgid "Отказ приема"
+msgstr "Refuse a book"
+
+#: cabinet/templates/personal-area.html:23
+msgid "Вывести списком"
+msgstr "Show as list"
+
+#: cabinet/templates/personal-area.html:23
+msgid "Вывести Календарем"
+msgstr "Show in calendar"
+
+#: cabinet/views.py:29
+msgid "Моя история"
+msgstr "My history"
+
+#: main/models.py:16
+#, fuzzy
+#| msgid "Видение"
+msgid "Видео на ютубе"
+msgstr "Our vision"
+
+#: main/models.py:16
+msgid "Например: https://www.youtube.com/watch?v=oBT4FR84PSg"
+msgstr "For example: https://www.youtube.com/watch?v=oBT4FR84PSg"
+
+#: main/models.py:17 main/models.py:27 main/templates/about-us.html:28
+msgid "Видение"
+msgstr "Our vision"
+
+#: main/models.py:18 main/templates/about-us.html:34
+#: main/templates/index.html:141
+msgid "Миссия"
+msgstr "Our mission"
+
+#: main/models.py:19 main/templates/about-us.html:40
+msgid "Наша философия"
+msgstr "Our philosophy"
+
+#: main/models.py:25
+msgid "Фамилия, Имя, Отчество"
+msgstr "Surname, Name, Lastname"
+
+#: main/models.py:25
+#, fuzzy
+#| msgid "Ф.И.О"
+msgid "ФИО"
+msgstr "F.N.S"
+
+#: main/models.py:26
+#, fuzzy
+#| msgid "Длительность"
+msgid "Должность"
+msgstr "Duration"
+
+#: main/models.py:26
+#, fuzzy
+#| msgid "Длительность"
+msgid "Напишите его должность"
+msgstr "Duration"
+
+#: main/models.py:37
+#, fuzzy
+#| msgid "адрес"
+msgid "Адрес"
+msgstr "address"
+
+#: main/models.py:38
+msgid ""
+"Напишите все номера через запитой, например: 996 702 12-34-56, 996 702 "
+"12-34-56"
+msgstr ""
+"Seperate numbers with comma, for example: 996 702 12-34-56, 996 702 12-34-56"
+
+#: main/models.py:46
+#, fuzzy
+#| msgid "социальные сети"
+msgid "Доступные соцети:"
+msgstr "socials"
+
+#: main/models.py:52 main/models.py:108
+msgid "Название"
+msgstr "Title"
+
+#: main/models.py:55 main/models.py:111
+msgid "Что входит в эту услугу:"
+msgstr "Including with this service"
+
+#: main/models.py:77 main/models.py:94 main/models.py:117
+#, fuzzy
+#| msgid "Моя история"
+msgid "Категория"
+msgstr "My history"
+
+#: main/models.py:92
+#, fuzzy
+#| msgid "Моя история"
+msgid "По категория"
+msgstr "My history"
+
+#: main/models.py:112
+msgid "При проведении:"
+msgstr "To carry out"
+
+#: main/templates/about-us.html:49
+msgid "Наша команда"
+msgstr "Our team"
+
+#: main/templates/about-us.html:61 main/templates/diagnostics.html:21
+#: main/templates/diagnostics.html:38 main/templates/diagnostics.html:55
+#: main/templates/diagnostics.html:72 main/templates/diagnostics.html:89
+#: main/templates/diagnostics.html:106 main/templates/doctors.html:41
+#: main/templates/doctors.html:60 main/templates/doctors.html:79
+#: main/templates/doctors.html:98 main/templates/doctors.html:117
+#: main/templates/doctors.html:136 main/templates/index.html:16
+#: main/templates/index.html:33 main/templates/index.html:46
+#: main/templates/index.html:59 main/templates/index.html:78
+#: main/templates/index.html:84 main/templates/index.html:90
+#: main/templates/index.html:163 main/templates/index.html:174
+#: main/templates/index.html:185 main/templates/index.html:196
+#: main/templates/index.html:207 main/templates/index.html:218
+#: main/templates/index.html:349 main/templates/index.html:363
+#: main/templates/index.html:377 main/templates/index.html:391
+#: main/templates/index.html:405 main/templates/index.html:419
+#: main/templates/index.html:444 main/templates/index.html:461
+#: main/templates/index.html:478 main/templates/index.html:495
+#: main/templates/index.html:512 main/templates/index.html:529
+#: main/templates/index.html:534 main/templates/index.html:630
+#: main/templates/index.html:644 main/templates/index.html:658
+#: main/templates/index.html:672 main/templates/index.html:686
+#: main/templates/index.html:700 main/templates/treatment.html:22
+msgid "Подробнее"
+msgstr "Read more"
+
+#: main/templates/contacts.html:12
+msgid "адрес"
+msgstr "address"
+
+#: main/templates/contacts.html:16
+msgid "телефоны"
+msgstr "telephone number"
+
+#: main/templates/contacts.html:25
+msgid "социальные сети"
+msgstr "socials"
+
+#: main/templates/contacts.html:38
+msgid "Режим работы"
+msgstr "Work graphic"
+
+#: main/templates/contacts.html:40
+msgid "Понедельник"
+msgstr "Monday"
+
+#: main/templates/contacts.html:40
+msgid "Суббота"
+msgstr "Saturday"
+
+#: main/templates/contacts.html:43
+msgid "Обед с"
+msgstr "Lunch from"
+
+#: main/templates/contacts.html:46
+msgid "Воскресенье"
+msgstr "Sunday"
+
+#: main/templates/contacts.html:46
+msgid "Выходной"
+msgstr "Holidays"
+
+#: main/templates/contacts.html:54
+msgid "У вас остались вопросы или пожелание?"
+msgstr "Do you still have questions or desires?"
+
+#: main/templates/contacts.html:55
+msgid ""
+"Вы можете задать любые вопросы по телефону или связаться с нами через нашу "
+"контактную форму ниже."
+msgstr ""
+"You can make any question through telephone or you can contact ususing the "
+"contact form down below"
+
+#: main/templates/contacts.html:60
+msgid "Имя"
+msgstr "Name"
+
+#: main/templates/contacts.html:64
+msgid "Тема"
+msgstr "Subject"
+
+#: main/templates/contacts.html:68
+msgid "Телефон"
+msgstr "Telephone"
+
+#: main/templates/contacts.html:76
+msgid "Сообщение"
+msgstr "Your message"
+
+#: main/templates/contacts.html:83
+msgid "Отправить"
+msgstr "Send"
+
+#: main/templates/doctors.html:10
+msgid "Специалисты"
+msgstr "Specialists"
+
+#: main/templates/doctors.html:19
+msgid "Ф.И.О"
+msgstr "F.N.S"
+
+#: main/templates/faq.html:8 main/templates/faq.html:21
+msgid "Кто мы такие?"
+msgstr "Who we are?"
+
+#: main/templates/faq.html:34
+msgid "Может ли врач сделать мне бесплатный осмотр?"
+msgstr "Can a doctor do me a free treatment?"
+
+#: main/templates/includes/_top_with_title.html:8
+msgid "Услгуи"
+msgstr "Services"
+
+#: main/templates/index.html:73
+msgid "Мы специализируемся на лечении заболеваний"
+msgstr "We specialize in the treatment of diseases"
+
+#: main/templates/index.html:115
+#, fuzzy
+#| msgid "Длительность"
+msgid "Системность"
+msgstr "Cost"
+
+#: main/templates/index.html:128
+msgid "Задачи"
+msgstr "Tasks"
+
+#: main/templates/index.html:153
+#, fuzzy
+#| msgid "наши цены"
+msgid "наши врачи"
+msgstr "our doctors"
+
+#: main/templates/index.html:228
+msgid "У вас боли в спине или что то другое?"
+msgstr "Do you have back pain or anything else?"
+
+#: main/templates/index.html:235
+msgid "преимущества клиники"
+msgstr "advantages of the clinic"
+
+#: main/templates/index.html:338
+#, fuzzy
+#| msgid "Диагностика"
+msgid "диагностика"
+msgstr "Diagnostic"
+
+#: main/templates/index.html:429
+#, fuzzy
+#| msgid "Лечение детей"
+msgid "лечение и реабилитация"
+msgstr "treatment and rehabilitation"
+
+#: main/templates/index.html:539
+#, fuzzy
+#| msgid "наши цены"
+msgid "наши гарантии"
+msgstr "our guarantees"
+
+#: main/templates/index.html:618
+#, fuzzy
+#| msgid "Вывести списком"
+msgid "новости и блог"
+msgstr "news and blog"
+
+#: main/templates/prices.html:11
+msgid "Цены по другим направлениям"
+msgstr "Prices in other areas"
+
+#: main/templates/prices.html:14
+msgid "Лечение детей"
+msgstr "Treatment for kids"
+
+#: main/templates/prices.html:16
+msgid "Косметология"
+msgstr "Cosmetology"
+
+#: main/templates/prices.html:17
+msgid "Хирургия"
+msgstr "Surgery"
+
+#: main/templates/prices.html:18
+msgid "Стационар"
+msgstr "hospital for in-patients"
+
+#: main/templates/prices.html:26
+msgid "наши цены"
+msgstr "Our prices"
+
+#: main/templates/prices.html:28
+msgid "Скачать прайслист"
+msgstr "Download prices list"
+
+#: main/templates/prices.html:38
+msgid "п/п"
+msgstr "t/t"
+
+#: main/templates/prices.html:40
+msgid "Стоимость (сом.)"
+msgstr "Cost (som.)"
+
+#: main/templates/prices.html:41
+msgid "Длительность"
+msgstr "Duration"
+
+#: main/templates/prices.html:65 main/templates/prices.html:88
+msgid "Второй день"
+msgstr "Second day"
+
+#: main/views.py:14
+msgid "Главная"
+msgstr "Home"
+
+#, fuzzy
+#~| msgid "Специалисты"
+#~ msgid "Специальность"
+#~ msgstr "Specialist"
+
+#, fuzzy
+#~| msgid "Запись к врачу"
+#~ msgid "Запись к конкретному врачу"
+#~ msgstr "Doctor booking"
+
+#~ msgid "Cost (сом.)"
+#~ msgstr "Price (som.)"

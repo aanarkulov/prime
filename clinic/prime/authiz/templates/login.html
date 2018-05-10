@@ -1,0 +1,43 @@
+{% extends '_base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block page_content %}
+  <section class="enter">
+    <div class="uk-container">
+      <div class="item uk-width-1-2@m uk-padding uk-margin-auto uk-box-shadow-small uk-box-shadow-hover-large">
+        <div class="uk-text-center">
+          <h2>{{title}}</h2>
+        </div>
+        <form action="{% url 'login' %}" method="post">
+          {% csrf_token %}
+          {{form.non_field_errors}}
+          <fieldset class="uk-fieldset">
+            <div class="uk-margin">
+              <label> 
+                <div class="uk-margin-small-bottom">{{form.phone.label}} <span>*</span></div>
+                {{form.phone}}
+              </label>
+            </div>
+            <div class="uk-margin">
+              <label> 
+                <div class="uk-margin-small-bottom">{{form.password.label}} <span>*</span></div>
+                {{form.password|add_class:"uk-input"}}
+              </label>
+            </div>
+            <div class="uk-margin uk-text-center">
+              <label class="uk-display-inline-block">
+                {{form.remember_me|add_class:"uk-checkbox"}}<b class="uk-margin-small-left">Запомнить меня</b>
+              </label>
+            </div>
+            <div class="uk-margin uk-text-center uk-margin-medium-top">
+                <button class="uk-button uk-button-default" type="submit">Войти</button>
+            </div>
+            <div class="uk-margin uk-text-center uk-margin-medium-top">
+                <a href="{% url 'register' %}" style="text-decoration: underline;">Регистрация</a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+{% endblock %}

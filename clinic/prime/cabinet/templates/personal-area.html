@@ -1,0 +1,213 @@
+{% extends '_base.html' %}
+{% load static i18n %}
+{% block page_content %}
+  <section class="personal-area">
+    <div class="uk-container">
+      <div class="uk-grid uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m">
+          {% include "includes/_menu.html" %}
+        </div>
+        <div class="uk-width-expand@m">
+          <div class="calendar">
+            <div class="uk-grid uk-child-width-1-2@m" uk-grid="">
+              <div class="uk-grid uk-grid-collapse uk-flex-left uk-flex-middle"><a class="uk-icon-button uk-margin-small-right uk-width-auto" href="" uk-icon="chevron-left"></a>
+                <div class="date uk-width-auto"><span>Месяц</span>
+                  <div><b>Апрель</b></div>
+                </div><a class="uk-icon-button uk-margin-small-right uk-width-auto" href="" uk-icon="chevron-right"></a>
+              </div>
+              <div class="uk-grid uk-grid-collapse uk-flex-middle uk-child-width-1-2">
+                <div class="indicator">
+                  <p class="uk-margin-remove blue">{% trans 'День приема' %}</p>
+                  <p class="uk-margin-remove red">{% trans 'Отказ приема' %}</p>
+                </div>
+                <div><a class="list-calendar" href="#" uk-toggle="target: .toggle; animation: uk-animation-slide-bottom-small"><span class="toggle">{% trans 'Вывести списком' %}</span><span class="toggle" hidden>{% trans 'Вывести Календарем' %}</span></a></div>
+              </div>
+            </div>
+            <div class="uk-margin-medium">
+              <div class="toggle">
+                <div class="calendar-block">
+                  <div class="uk-grid uk-grid-collapse week-block desktop uk-child-width-expand uk-visible@m">
+                    <div><span>понедельник</span></div>
+                    <div><span>вторник</span></div>
+                    <div><span>среда</span></div>
+                    <div><span>четверг</span></div>
+                    <div><span>пятница</span></div>
+                    <div><span>суббота</span></div>
+                    <div><span>воскресенье</span></div>
+                  </div>
+                  <div class="uk-grid uk-grid-collapse week-block mobile uk-child-width-expand uk-hidden@m">
+                    <div><span>Пн</span></div>
+                    <div><span>Вт</span></div>
+                    <div><span>Ср</span></div>
+                    <div><span>Чт</span></div>
+                    <div><span>Пт</span></div>
+                    <div><span>Сб</span></div>
+                    <div><span>Вс</span></div>
+                  </div>
+                </div>
+                <div class="date-container">
+                  <div class="uk-grid uk-grid-collapse date-block uk-child-width-expand">
+                    <div><span>1</span></div>
+                    <div><span>2</span></div>
+                    <div><span>3</span></div>
+                    <div><span>4</span></div>
+                    <div><span>5</span></div>
+                    <div><span>6</span></div>
+                    <div class="reserved"><span>7</span>
+                      <div class="uk-position-bottom-left">
+                        <div class="time">Время</div><b>13:20</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-grid uk-grid-collapse date-block uk-child-width-expand">
+                    <div><span>8</span></div>
+                    <div><span>9</span></div>
+                    <div><span>10</span></div>
+                    <div><span>11</span></div>
+                    <div><span>12</span></div>
+                    <div><span>13</span></div>
+                    <div class="reserved"><span>14</span>
+                      <div class="uk-position-bottom-left">
+                        <div class="time">Время</div><b>13:20</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-grid uk-grid-collapse date-block uk-child-width-expand">
+                    <div><span>15</span></div>
+                    <div><span>16</span></div>
+                    <div><span>17</span></div>
+                    <div><span>18</span></div>
+                    <div><span>19</span></div>
+                    <div class="reserved"><span>20</span>
+                      <div class="uk-position-bottom-left">
+                        <div class="time">Время</div><b>13:20</b>
+                      </div>
+                    </div>
+                    <div><span>21</span></div>
+                  </div>
+                  <div class="uk-grid uk-grid-collapse date-block uk-child-width-expand">
+                    <div><span>22</span></div>
+                    <div><span>23</span></div>
+                    <div><span>24</span></div>
+                    <div><span>25</span></div>
+                    <div><span>26</span></div>
+                    <div><span>27</span></div>
+                    <div class="reserved"><span>28</span>
+                      <div class="uk-position-bottom-left">
+                        <div class="time">Время</div><b>13:20</b>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-grid uk-grid-collapse date-block uk-child-width-expand">
+                    <div class="reserved"><span>29</span>
+                      <div class="uk-position-bottom-left">
+                        <div class="time">Время</div><b>13:20</b>
+                      </div>
+                    </div>
+                    <div><span>30</span></div>
+                    <div><span>31</span></div>
+                    <div><span>1</span></div>
+                    <div><span>2</span></div>
+                    <div><span>3</span></div>
+                    <div><span>4</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="toggle" hidden>
+                <div class="calendar-block-list">
+                  <div class="item active">
+                    <div class="uk-grid uk-grid-collapse uk-flex-middle" uk-grid="">
+                      <div class="uk-width-auto@m">
+                        <div class="uk-padding">
+                          <div class="data">
+                            <h6>15 Апрель</h6>
+                          </div>
+                          <div class="date-time"><span>Время</span><b>16:30</b></div>
+                        </div>
+                      </div>
+                      <div class="uk-width-expand@m right-side">
+                        <div class="uk-padding">
+                          <div class="uk-grid-small" uk-grid="">
+                            <div class="uk-width-expand" uk-leader=""> <b>Услуга:</b></div>
+                            <div>Полное обследование</div>
+                          </div>
+                          <div class="uk-grid-small" uk-grid="">
+                            <div class="uk-width-expand" uk-leader=""> <b>Врач:</b></div>
+                            <div>Анатолий Михалович Бонецский</div>
+                          </div>
+                          <div class="uk-grid-small" uk-grid="">
+                            <div class="uk-width-expand" uk-leader=""> <b>Стоимость:</b></div>
+                            <div>1.200 сом</div>
+                          </div>
+                          <div class="uk-margin"><a class="move" href="">Перенести прием</a><span class="uk-margin-small-left uk-margin-small-right">|</span><a class="cancel" href="">Отменить</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="uk-grid uk-grid-collapse uk-flex-middle" uk-grid="">
+                      <div class="uk-width-auto@m">
+                        <div class="uk-padding">
+                          <div class="data">
+                            <h6>15 Апрель</h6>
+                          </div>
+                          <div class="date-time"><span>Время</span><b>16:30</b></div>
+                        </div>
+                      </div>
+                      <div class="uk-width-expand@m right-side">
+                        <div class="uk-padding">
+                          <div class="uk-grid-small" uk-grid="">
+                            <div class="uk-width-expand" uk-leader=""> <b>Услуга:</b></div>
+                            <div>Полное обследование</div>
+                          </div>
+                          <div class="uk-grid-small" uk-grid="">
+                            <div class="uk-width-expand" uk-leader=""> <b>Врач:</b></div>
+                            <div>Анатолий Михалович Бонецский</div>
+                          </div>
+                          <div class="uk-grid-small" uk-grid="">
+                            <div class="uk-width-expand" uk-leader=""> <b>Стоимость:</b></div>
+                            <div>1.200 сом</div>
+                          </div>
+                          <div class="uk-margin"><a class="move" href="">Перенести прием</a><span class="uk-margin-small-left uk-margin-small-right">|</span><a class="cancel" href="">Отменить</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="uk-grid uk-grid-collapse uk-flex-middle" uk-grid="">
+                      <div class="uk-width-auto@m">
+                        <div class="uk-padding">
+                          <div class="data">
+                            <h6>15 Апрель</h6>
+                          </div>
+                          <div class="date-time"><span>Время</span><b>16:30</b></div>
+                        </div>
+                      </div>
+                      <div class="uk-width-expand@m right-side">
+                        <div class="uk-padding">
+                          <div class="uk-grid-small" uk-grid="">
+                            <div class="uk-width-expand" uk-leader=""> <b>Услуга:</b></div>
+                            <div>Полное обследование</div>
+                          </div>
+                          <div class="uk-grid-small" uk-grid="">
+                            <div class="uk-width-expand" uk-leader=""> <b>Врач:</b></div>
+                            <div>Анатолий Михалович Бонецский</div>
+                          </div>
+                          <div class="uk-grid-small" uk-grid="">
+                            <div class="uk-width-expand" uk-leader=""> <b>Стоимость:</b></div>
+                            <div>1.200 сом</div>
+                          </div>
+                          <div class="uk-margin"><a class="move" href="">Перенести прием</a><span class="uk-margin-small-left uk-margin-small-right">|</span><a class="cancel" href="">Отменить</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
